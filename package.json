@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seeder": "node ./src/seeder/index",
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "build": "node ./src/seeder/index && node server --output public"
   },
   "keywords": [],
   "author": "",
