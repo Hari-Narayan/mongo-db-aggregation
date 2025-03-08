@@ -12,7 +12,9 @@ require("./src/config/db");
 // Middleware
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) =>
+  res.json({ msg: "Express on Vercel", dbUri: process.env.DB_URI })
+);
 
 // Base URL config
 app.use("/api", rootsRoutes);
