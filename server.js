@@ -13,7 +13,7 @@ require("./src/config/db");
 app.use(express.json());
 
 app.get("/", (req, res) =>
-  res.json({ msg: "Express on Vercel", dbUri: process.env.DB_URI })
+  res.json({ msg: "Express on Vercel", success: true })
 );
 
 // Base URL config
