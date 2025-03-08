@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "node server",
     "start": "nodemon server",
-    "build": "node server"
+    "seeder": "node ./src/seeder/index"
   },
   "keywords": [],
   "author": "",
